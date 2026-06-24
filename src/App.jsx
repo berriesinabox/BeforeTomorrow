@@ -75,13 +75,39 @@ function App() {
   }
 
   async function analyzeSavedTask(item) {
-    const result = await analyzeTask(
-      item.task,
-      item.deadline,
-      item.hours
-    );
+    try {
+      const result = await analyzeTask(
+        item.task,
+        item.deadline,
+        item.hours
+      );
 
-    setAiResult(result);
+      setAiResult(result);
+    } catch (error) {
+      console.error(error);
+
+      if (String(error).includes("429")) {
+        setAiResult(`
+  Priority: High
+
+  Risk Score: 70
+
+  Task Breakdown:
+  - Break task into smaller steps
+  - Focus on highest-priority work
+  - Review progress daily
+
+  Suggested Schedule:
+  Day 1: Planning
+  Day 2: Execution
+  Day 3: Review
+
+  Gemini quota temporarily exhausted.
+  `);
+      } else {
+        setAiResult("Unable to analyze task.");
+      }
+    }
   }
 
   function getUrgency(deadline) {
