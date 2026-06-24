@@ -1,16 +1,43 @@
-# React + Vite
+# BeforeTomorrow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Problem Statement Selected
 
-Currently, two official plugins are available:
+The Last-Minute Life Saver
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Solution Overview
 
-## React Compiler
+BeforeTomorrow is an AI-powered productivity companion designed to help users complete tasks before missing deadlines. The application assists users by analyzing tasks, estimating urgency, generating actionable breakdowns, and suggesting schedules using Google's Gemini AI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal is to move beyond traditional reminders and provide meaningful guidance that helps users take action and stay productive.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* AI-powered task analysis using Gemini AI
+* Task prioritization and risk assessment
+* Smart task breakdown generation
+* Suggested schedule planning
+* Task completion tracking
+* Dashboard showing task statistics
+* Urgency indicators based on deadlines
+* Local storage support for persistent tasks
+
+## Technologies Used
+
+* React
+* JavaScript
+* Vite
+* CSS
+* Local Storage
+
+## Google Technologies Utilized
+
+* Google AI Studio
+* Gemini 2.5 Flash API
+
+## Future Enhancements
+
+* Calendar integration
+* Voice assistant support
+* Email reminders
+* Team collaboration features
+* Advanced productivity analytics
